@@ -1,14 +1,21 @@
 <template>
-  <nav>
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link> |
-    <router-link to="/resume">Resume</router-link> |
-    <router-link to="/projects">Projects</router-link> |
-    <router-link to="/testimonials">Testimonials</router-link> |
-    <router-link to="/contact">Contact</router-link>
-  </nav>
-  <router-view/>
+  <NavBar/>
+  <main>
+    <router-view/>
+
+  </main>
+  <Footer/>
 </template>
+
+<script>
+import NavBar from './components/NavBar.vue';
+
+export default {
+  components: {
+    NavBar
+  }
+}
+</script>
 
 <style>
 #app {
@@ -16,19 +23,22 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #2c3e50;
+  color: #000000;
 }
 
 nav {
   padding: 30px;
 }
 
-nav a {
+nav a:hover {
   font-weight: bold;
-  color: #2c3e50;
+  color: #5a7da0;
 }
 
+nav a.router-link-exact-active:hover {
+  color: #18c8e3;
+}
 nav a.router-link-exact-active {
-  color: #42b983;
+  color: #18c8e3;
 }
 </style>

@@ -1,8 +1,8 @@
 <template>
     <div class="container">
-        <div class="row">
+        <!-- <div class="row">
             <p class="lead">Luqmaan's Portfolio &copy; <span>{{ currYear }}</span></p>
-        </div>
+        </div> -->
     </div>
 </template>
 
