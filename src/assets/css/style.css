@@ -9,3 +9,16 @@
     box-sizing: border-box;
 }
 
+.display-2 {
+    font-family: "Redressed", cursive;
+    padding-top: 20px;
+}
+
+#background {
+        background: #ffffff;
+        background: linear-gradient(
+          180deg,
+          rgb(0, 10, 255, 25%) 0%,
+          rgb(255, 0, 199, 50%) 100%
+        );
+      }

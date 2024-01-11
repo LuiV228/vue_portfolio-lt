@@ -1,5 +1,5 @@
 <template>
-    <div class="container-fluid fixed-bottom" id="footer">
+    <div class="container-fluid" id="footer">
         <div class="row">
             <p class="lead">Luqmaan's Portfolio &copy; <span>{{ currYear }}</span></p>
         </div>
@@ -47,6 +47,7 @@ body {
 #footer {
     width: 100%;
     background-color: black;
-    position: fixed;
+    position: relative;
+    bottom: 0;
 }
 </style>

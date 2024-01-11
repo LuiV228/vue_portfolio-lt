@@ -1,6 +1,6 @@
 <template>
   <NavBar/>
-  <main>
+  <main class="container-fluid" id="background">
     <router-view/>
 
   </main>

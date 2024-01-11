@@ -1,7 +1,58 @@
 <template>
   <div class="container">
       <div class="row">
-          <h1 class="display-2">This is an about page</h1>
+          <h1 class="display-2">Who is Luqmaan?</h1>
+      </div>
+      <div class="row1">
+        <div class="col1">
+          <div id="about1">
+            <p>
+              Meet Luqmaan Toffey, a passionate and driven aspiring Data
+              Scientist on the cusp of making a transformative impact in the
+              world of data analytics. With a strong foundation in mathematics
+              and a natural curiosity for uncovering patterns within datasets,
+              Luqmaan is poised to revolutionize decision-making through
+              data-driven insights.
+            </p>
+          </div>
+        </div>
+        <div class="col2">
+          <img src="https://i.postimg.cc/LXhs6xBN/IMG-20220213-WA0040-97.jpg" class="img-fluid"/>
+        </div>
+      </div>
+      <div class="row1" >
+        <div class="col2">
+          <img src="https://i.postimg.cc/QdrJzypL/IMG-20220213-WA0039-85.jpg"/>
+        </div>
+        <div class="col1" id="about2">
+          <div>
+            <p>
+              Adept at programming languages like Python and R, Luqmaan
+              possesses a deep understanding of machine learning algorithms and
+              statistical techniques. This knowledge, combined with a keen eye
+              for detail, allows Luqmaan to extract meaningful information from
+              complex datasets, transforming them into actionable intelligence.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="row1" >
+        <div class="col1">
+          <div id="about3">
+            <p id="align">
+              What sets Luqmaan apart is an insatiable hunger for knowledge and
+              a commitment to staying at the forefront of industry advancements.
+              Luqmaan is not just aspiring to be a Data Scientist; they are
+              determined to be a trailblazer, using their analytical prowess to
+              solve real-world problems and drive innovation. With Luqmaan at
+              the helm, the future of data science is brighter and more
+              promising than ever.
+            </p>
+          </div>
+        </div>
+        <div class="col2">
+          <img src="https://i.postimg.cc/y6gh8Hj4/IMG-9132-98.jpg"/>
+        </div>
       </div>
   </div>
 </template>
@@ -14,4 +65,55 @@
 
 <style scoped>
 
+.row1{
+    height: 23%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+.col1{
+    width: 70%;
+    text-align: center;
+    align-items: center;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+}
+.col2{
+    width: 30%;
+    align-items: center;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+img{
+    height: 100%;
+    width: 65%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border-radius: 25%;
+}
+
+#about1 {
+  margin-top: 30px;
+  text-align: justify;
+}
+
+#about2 {
+  margin-top: 30px;
+  text-align: justify;
+}
+
+#about3 {
+  margin-top: 90px;
+  text-align: justify;
+}
 </style>
