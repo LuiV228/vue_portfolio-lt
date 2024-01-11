@@ -9,36 +9,27 @@
 
 <script>
 import NavBar from './components/NavBar.vue';
+import Footer from './components/Footer.vue';
 
 export default {
   components: {
-    NavBar
+    NavBar,
+    Footer
   }
 }
 </script>
 
 <style>
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
+  font-family: "Lusitana", serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #000000;
 }
 
-nav {
-  padding: 30px;
-}
 
-nav a:hover {
-  font-weight: bold;
-  color: #5a7da0;
-}
-
-nav a.router-link-exact-active:hover {
-  color: #18c8e3;
-}
-nav a.router-link-exact-active {
-  color: #18c8e3;
+body {
+  font-family: "Lusitana", serif;
 }
 </style>
