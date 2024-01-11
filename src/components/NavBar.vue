@@ -41,8 +41,25 @@
 </script>
 
 <style scoped>
+
 #logo {
     width: 100px;
     height: 100px;
+}
+
+nav {
+  padding: 10px;
+}
+
+nav a:hover {
+  font-weight: bold;
+  color: #5a7da0;
+}
+
+nav a.router-link-exact-active:hover {
+  color: #18c8e3;
+}
+nav a.router-link-exact-active {
+  color: #18c8e3;
 }
 </style>
