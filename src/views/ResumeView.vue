@@ -8,8 +8,16 @@
 
 <script>
     export default {
-        
-    }
+        computed: {
+            resume() {
+                return this.$store.state.resume;
+            }
+        },
+        mounted() {
+            this.$store.dispatch(`fetchResume`);
+        },
+        // components: { SpinnerComp }
+    };
 </script>
 
 <style scoped>
