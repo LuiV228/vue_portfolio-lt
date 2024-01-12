@@ -4,11 +4,10 @@
             <p class="lead">Luqmaan's Portfolio &copy; <span>{{ currYear }}</span></p>
         </div>
         <footer class="socials d-flex justify-content-center">
-            <i class="bi bi-facebook" id="icon"></i>
-            <i class="bi bi-github" id="icon"></i>
-            <i class="bi bi-instagram" id="icon"></i>
-            <i class="bi bi-tiktok" id="icon"></i>
-            <i class="bi bi-twitter" id="icon"></i>
+            <i class="bi bi-facebook" id="icon"><a href="https://www.facebook.com/luqmaan.toffey"></a></i>
+            <i class="bi bi-github" id="icon"><a href="https://github.com/LuiV228/vue_portfolio-lt.git"></a></i>
+            <i class="bi bi-linkedin" id="icon"><a href="https://www.linkedin.com/in/luqmaan-toffey-9802772aa/"></a></i>
+            <i class="bi bi-instagram" id="icon"><a href="https://www.instagram.com/luqi_t228/"></a></i>
         </footer>
     </div>
 </template>

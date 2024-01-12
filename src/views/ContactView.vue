@@ -1,8 +1,13 @@
 <template>
     <div class="container-fluid">
+        <div class="container">
+            <div class="row">
+                <h2 class="display-2">How is Luqmaan?</h2>
+            </div>
+        </div>
     <div class="ROW justify-content-start">
         <div class="formy">
-            <form action="#">
+            <form action="https://formspree.io/f/mgegvano" method="post" >
                 <div class="mb-3 mt-3">
                     <label for="firstName" class="form-label">First Name:</label>
                     <input type="FirstName" class="form-control" id="firstName" placeholder="Enter First Name" name="FirstName">
@@ -14,10 +19,6 @@
                 <div class="mb-3 mt-3">
                     <label for="email" class="form-label">Email Address:</label>
                     <input type="email" class="form-control" id="email" placeholder="Enter Email" name="email">
-                </div>
-                <div class="mb-3">
-                    <label for="pwd" class="form-label">Password:</label>
-                    <input type="password" class="form-control" name="pswd" id="pwd" placeholder="Enter Password">
                 </div>
                 <div class="form-check mb-3">
                     <label for="pwd" class="form-check-label">

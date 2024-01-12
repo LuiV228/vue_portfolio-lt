@@ -6,8 +6,8 @@
     </div>
     <br>
     <br>
-    <section class="row d-block d-m-flex justify-content-center">
-        <div class="card my-5 p-5 d-flex justify-content-center" id="cardP" style="width: 60rem;" v-for="project in projects" :key="project.name">
+    <section class="row d-block d-flex justify-content-center">
+        <div class="card my-5 p-5 d-flex justify-content-center flex-wrap-row" id="cardP" style="width: 60rem;" v-for="project in projects" :key="project.name">
           <img :src="project.image" class="card-img-top">
           <div class="card-body">
             <h5 class="card-title">{{ project.name }}</h5>
@@ -51,4 +51,5 @@
     margin-left: 10px;
     margin-right: 10px;
 }
+
 </style>
