@@ -1,49 +1,68 @@
 <template>
-    <div class="container-fluid">
-        <div class="container">
-            <div class="row">
-                <h2 class="display-2">How is Luqmaan?</h2>
-            </div>
-        </div>
+  <div class="container-fluid">
+    <div class="container">
+      <div class="row">
+        <h2 class="display-2">How is Luqmaan?</h2>
+      </div>
+    </div>
     <div class="ROW justify-content-start">
-        <div class="formy">
-            <form action="https://formspree.io/f/mgegvano" method="post" >
-                <div class="mb-3 mt-3">
-                    <label for="firstName" class="form-label">First Name:</label>
-                    <input type="FirstName" class="form-control" id="firstName" placeholder="Enter First Name" name="FirstName">
-                </div>
-                <div class="mb-3 mt-3">
-                    <label for="lastName" class="form-label">Last Name:</label>
-                    <input type="lastName" class="form-control" id="lastName" placeholder="Enter Last Name" name="lastName">
-                </div>
-                <div class="mb-3 mt-3">
-                    <label for="email" class="form-label">Email Address:</label>
-                    <input type="email" class="form-control" id="email" placeholder="Enter Email" name="email">
-                </div>
-                <div class="form-check mb-3">
-                    <label for="pwd" class="form-check-label">
-                        <input class="form-check-input" type="checkbox" name="remember">Remember Me?
-                    </label>
-                </div>
-                <label for="message">Your Message:</label>
-                <div>
-                    <textarea name="form-control" id="message" rows="5"></textarea>
-                </div>
-                <button type="submit" class="btn btn-primary">Submit</button>
-            </form>
-        </div>
+      <div class="formy">
+        <form w>
+          <div class="mb-3 mt-3">
+            <label for="firstName" class="form-label">First Name:</label>
+            <input
+              type="FirstName"
+              class="form-control"
+              id="firstName"
+              placeholder="Enter First Name"
+              name="FirstName"
+            />
+          </div>
+          <div class="mb-3 mt-3">
+            <label for="lastName" class="form-label">Last Name:</label>
+            <input
+              type="lastName"
+              class="form-control"
+              id="lastName"
+              placeholder="Enter Last Name"
+              name="lastName"
+            />
+          </div>
+          <div class="mb-3 mt-3">
+            <label for="email" class="form-label">Email Address:</label>
+            <input
+              type="email"
+              class="form-control"
+              id="email"
+              placeholder="Enter Email"
+              name="email"
+            />
+          </div>
+          <div class="form-check mb-3">
+            <label for="pwd" class="form-check-label">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                name="remember"
+              />Remember Me?
+            </label>
+          </div>
+          <label for="message">Your Message:</label>
+          <div>
+            <textarea name="form-control" id="message" rows="5"></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+      </div>
     </div>
-    </div>
+  </div>
 </template>
 
 <script>
-    export default {
-        
-    }
+export default {};
 </script>
 
 <style scoped>
-
 .formy {
   background: rgb(224, 224, 241);
   border-radius: 10px;
@@ -61,7 +80,6 @@
 }
 
 input {
-    text-align: center;
+  text-align: center;
 }
-
 </style>
