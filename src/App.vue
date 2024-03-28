@@ -23,7 +23,9 @@ export default {
 
 <style>
 #app {
-  font-family: "Lusitana", serif;
+  font-family: "Indie Flower", cursive;
+  font-weight: 400;
+  font-style: normal;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;

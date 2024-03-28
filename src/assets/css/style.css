@@ -1,25 +1,19 @@
 /* css styling */
-@import url("https://fonts.googleapis.com/css2?family=Caveat&family=Lusitana&family=Pixelify+Sans&family=Playpen+Sans:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap");
 
 *,
 *::before,
-*::after{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 .display-2 {
-    font-family: "Redressed", cursive;
-    padding-top: 20px;
+  padding-top: 30px;
 }
 
 #background {
-        background: #ffffff;
-        background: linear-gradient(
-          180deg,
-          rgb(0, 10, 255, 25%) 0%,
-          rgb(255, 0, 199, 50%) 100%
-        );
-        padding: 0 0 2rem 0;
-      }
+  background: rgb(0, 10, 255, 25%);
+  padding: 0 0 2rem 0;
+}
