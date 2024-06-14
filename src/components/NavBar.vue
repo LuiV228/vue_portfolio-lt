@@ -65,24 +65,24 @@ export default {
 
 #nav {
   padding: 10px;
-  background: rgb(255, 0, 199, 50%) 100% !important;
+  background: rgb(0, 10, 255, 50%) 100% !important;
 }
 
 nav a {
   font-size: 20px;
-  color: rgb(0, 0, 0);
+  color: #faf9f6;
 }
 
 nav a:hover {
   font-weight: bold;
-  color: #0008ff;
+  color: #36454f;
 }
 
 nav a.router-link-exact-active:hover {
-  color: #0008ff;
+  color: #36454f;
 }
 
 nav a.router-link-exact-active {
-  color: #0008ff;
+  color: #36454f;
 }
 </style>

@@ -22,7 +22,7 @@
         />
       </div>
     </div>
-    <div class="row1">
+    <div class="row1 reverse-on-mobile">
       <div class="col2">
         <img src="https://i.postimg.cc/QdrJzypL/IMG-20220213-WA0039-85.jpg" />
       </div>
@@ -64,58 +64,78 @@ export default {};
 </script>
 
 <style scoped>
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.row {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
 .row1 {
-  height: 23%;
-  width: 100%;
   display: flex;
-  flex-direction: row;
+  flex-wrap: wrap;
   gap: 2rem;
   padding-top: 2rem;
   padding-bottom: 2rem;
 }
-.col1 {
-  width: 70%;
+
+.col1, .col2 {
+  flex: 1;
   text-align: center;
   align-items: center;
-  height: 100%;
   display: flex;
   justify-content: center;
-  align-items: center;
-  font-size: 20px;
+  flex-direction: column;
 }
-.col2 {
-  width: 30%;
-  align-items: center;
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+
+.col1 {
+  font-size: 20px;
 }
 
 img {
-  height: 100%;
-  width: 90%;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
+  width: 100%;
+  max-width: 300px;
+  height: auto;
   border-radius: 25%;
 }
 
-#about1 {
-  font-size: 25px;
+#about1, #about2, #about3 {
+  font-size: 20px;
   margin-top: 30px;
   text-align: justify;
 }
 
-#about2 {
-  font-size: 25px;
-  margin-top: 30px;
-  text-align: justify;
+/* Media Queries */
+@media (max-width: 768px) {
+  .row1 {
+    flex-direction: column;
+  }
+
+  .reverse-on-mobile {
+    flex-direction: column-reverse;
+  }
+  
+  img {
+    max-width: 200px;
+  }
+
+  #about1, #about2, #about3 {
+    font-size: 18px;
+  }
 }
 
-#about3 {
-  font-size: 25px;
-  margin-top: 90px;
-  text-align: justify;
+@media (max-width: 480px) {
+  img {
+    max-width: 150px;
+  }
+
+  #about1, #about2, #about3 {
+    font-size: 16px;
+    margin-top: 20px;
+  }
 }
 </style>

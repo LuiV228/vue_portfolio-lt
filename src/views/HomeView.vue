@@ -18,11 +18,13 @@
     </div>
     <div class="col-right">
       <div>
-        <h2 class="developer">I'm an aspiring Data Scientist</h2>
+        <h2 class="developer">
+          I'm an aspiring Data Scientist <br />&<br /> Fullstack Web Developer
+        </h2>
       </div>
       <br />
       <div class="circle">
-        <i class="bi bi-arrow-right"></i>
+        <router-link to="/about" class="nav-link"><i class="bi bi-arrow-right"></i></router-link>
       </div>
       <br />
       <div>
@@ -37,53 +39,61 @@ export default {};
 </script>
 
 <style scoped>
-.row {
-  width: 100%;
-  height: 60%;
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
+/* General Styles */
+.home {
+  padding-top: 50px;
 }
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  padding: 2rem;
+}
+
 .col-left,
 .col-middle,
 .col-right {
+  flex: 1;
+  min-width: 300px; /* Ensures columns don't get too narrow */
+  margin: 1rem;
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100%;
-  width: 30%;
-}
-.col-left {
   flex-direction: column;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 .col-middle img {
-  width: 90%;
-  height: 100%;
+  width: 100%;
+  max-width: 300px; /* Prevents image from getting too large */
+  height: auto;
+  border-radius: 5%;
 }
+
 .hero-btn {
-  color: rgb(0, 0, 0);
-  border: 1px solid black;
+  color: #faf9f6;
+  border: 5px solid #faf9f6;
   padding: 12px 34px;
-  font-size: 13px;
+  font-size: 17px;
   background: transparent;
   cursor: pointer;
+  text-align: center;
 }
+
 .hero-btn:hover {
-  border: 1px solid #18c8e3;
-  background: #18c8e3;
+  border: 1px solid rgb(0, 10, 255, 50%);
+  background: rgb(0, 10, 255, 50%);
   transition: 1s;
 }
 
 .developer {
+  text-align: center;
   margin-top: 10%;
 }
+
 .circle {
-  border: 2px solid black;
-  background-color: #ffffff;
+  border: 5px solid #faf9f6;
+  background-color: #36454f;
   border-radius: 50%;
   width: 100px;
   height: 100px;
@@ -95,17 +105,108 @@ export default {};
 
 .bi-arrow-right {
   font-size: 50px !important;
-}
-
-.col-right {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  flex-direction: column;
+  color: #faf9f6;
 }
 
 img {
   border-radius: 5%;
+  margin-top: 22px;
+}
+
+/* Media Queries for different screen sizes */
+@media (max-width: 1200px) {
+  .developer {
+    font-size: 1.8rem;
+  }
+
+  .intro span {
+    font-size: 1.8rem;
+  }
+
+  .circle {
+    width: 90px;
+    height: 90px;
+  }
+
+  .bi-arrow-right {
+    font-size: 45px !important;
+  }
+
+  .hero-btn {
+    font-size: 1.1rem;
+    padding: 10px 28px;
+  }
+
+  .hero-btn:hover {
+    border: 1px solid rgb(0, 10, 255, 50%);
+    background: rgb(0, 10, 255, 50%);
+    transition: 1s;
+  }
+}
+
+@media (max-width: 768px) {
+  .developer {
+    font-size: 1.5rem;
+  }
+
+  .intro span {
+    font-size: 1.5rem;
+  }
+
+  .circle {
+    width: 80px;
+    height: 80px;
+  }
+
+  .bi-arrow-right {
+    font-size: 40px !important;
+  }
+
+  .hero-btn {
+    font-size: 1rem;
+    padding: 8px 24px;
+  }
+
+  .hero-btn:hover {
+    border: 1px solid rgb(0, 10, 255, 50%);
+    background: rgb(0, 10, 255, 50%);
+    transition: 1s;
+  }
+
+  .col-left,
+  .col-middle,
+  .col-right {
+    margin: 0.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .developer {
+    font-size: 1.2rem;
+  }
+
+  .intro span {
+    font-size: 1.2rem;
+  }
+
+  .circle {
+    width: 70px;
+    height: 70px;
+  }
+
+  .bi-arrow-right {
+    font-size: 35px !important;
+  }
+
+  .hero-btn {
+    font-size: 0.9rem;
+    padding: 6px 20px;
+  }
+
+  .hero-btn:hover {
+    border: 1px solid rgb(0, 10, 255, 50%);
+    background: rgb(0, 10, 255, 50%);
+    transition: 1s;
+  }
 }
 </style>
