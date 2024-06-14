@@ -23,17 +23,16 @@ export default {
 
 <style>
 #app {
-  font-family: "Indie Flower", cursive;
+  font-family: "Roboto", sans-serif;
   font-weight: 400;
   font-style: normal;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #000000;
+  color: #faf9f6;
 }
 
-
 body {
-  font-family: "Lusitana", serif;
+  font-family: 'Roboto', sans-serif;
 }
 </style>

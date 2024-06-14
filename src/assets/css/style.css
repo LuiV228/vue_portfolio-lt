@@ -1,5 +1,5 @@
 /* css styling */
-@import url("https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
 *,
 *::before,
@@ -14,6 +14,6 @@
 }
 
 #background {
-  background: rgb(0, 10, 255, 25%);
+  background: #36454f;
   padding: 0 0 2rem 0;
 }

@@ -40,21 +40,72 @@ export default {
 </script>
 
 <style scoped>
-.card {
-  background: rgb(224, 224, 241);
+.container {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
 }
 
-#card-content {
-  font-size: 17px;
+.display-2 {
+  color: #36454f;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.card {
+  background: #e0e0f1;
+  width: 100%;
+  max-width: 300px;
+  transition: transform 0.3s;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.card-img-top {
+  border-radius: 10px;
+  height: 200px;
+  object-fit: cover;
+}
+
+.list-group-item {
+  background-color: #36454f;
+  color: #faf9f6;
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.card-body {
+  padding: 1rem;
+  height: 30px;
 }
 
 .card-text {
   text-align: justify;
+  font-size: 1rem;
+  color: #333;
 }
 
-ul {
-  font-size: 22px;
-  height: 50px;
-  background: rgb(224, 224, 241);
+@media (max-width: 1200px) {
+  .card {
+    max-width: 90%;
+  }
+}
+
+@media (max-width: 768px) {
+  .card {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 576px) {
+  .display-2 {
+    font-size: 2rem;
+  }
+  .card {
+    max-width: 100%;
+  }
 }
 </style>
+

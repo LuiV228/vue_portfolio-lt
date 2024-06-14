@@ -35,12 +35,12 @@ body {
 }
 
 .lead {
-  color: #000000;
+  color: #faf9f6;
   margin-top: 1%;
 }
 
 .socials {
-  color: #000000;
+  color: #faf9f6;
 }
 
 a {
@@ -48,14 +48,14 @@ a {
   margin-left: 1%;
   margin-right: 1%;
   margin-bottom: 1%;
-  color: #000000;
+  color: #faf9f6;
   font-size: 30px;
 }
 
 #footer {
   padding-top: 3px;
   width: 100%;
-  background: rgb(255, 0, 199, 50%) 100%;
+  background: rgb(0, 10, 255, 50%) 100% !important;
   position: relative;
   bottom: 0;
 }
