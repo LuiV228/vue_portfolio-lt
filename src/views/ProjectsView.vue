@@ -14,9 +14,10 @@
       v-for="project in projects"
       :key="project.name"
     >
+    <h5 class="card-title">{{ project.name }}</h5>
       <img :src="project.image" class="card-img-top" />
       <div class="card-body">
-        <h5 class="card-title">{{ project.name }}</h5>
+        
         <ul class="list-group list-group-flush" id="cardP">
           <li class="list-group-item" id="cardP">{{ project.description }}</li>
         </ul>
@@ -49,7 +50,7 @@ export default {
 
 <style scoped>
 .card {
-  background: rgb(255, 0, 199, 50%) 100% !important;
+  background: rgb(114, 119, 255) 50% !important;
   font-size: 20px;
 }
 
@@ -59,20 +60,26 @@ img {
 
 #cardP {
   border-radius: 10px;
-  color: blacky;
-  background: rgb(224, 224, 241);
+  color: #faf9f6;
+  background: #36454f;
 }
 
 #btnP {
-  color: black;
+  color: #faf9f6;
   font-size: 20px;
   margin-left: 10px;
   margin-right: 10px;
-  padding-top: 16px;
+  margin-top: 20px;
+  vertical-align: middle;
+  border-color: #faf9f600;
+  border-width: 3px;
+  font-weight: bold;
 }
 
-#btnP :hover {
-  color: #0008ff;
-  border-color: #0008ff;
+#btnP:hover {
+  color: #36454f;
+  border-color: #36454f;
+  border-width: 3px;
+  font-weight: bold;
 }
 </style>
