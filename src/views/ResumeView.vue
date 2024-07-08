@@ -78,7 +78,7 @@ export default {
 
 .card-body {
   padding: 1rem;
-  height: 30px;
+  height: 10px;
 }
 
 .card-text {
