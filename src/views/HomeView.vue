@@ -78,12 +78,13 @@ export default {};
   background: transparent;
   cursor: pointer;
   text-align: center;
+  transition: 0.2s;
 }
 
 .hero-btn:hover {
-  border: 1px solid rgb(0, 10, 255, 50%);
-  background: rgb(0, 10, 255, 50%);
-  transition: 1s;
+  border: 1px solid #faf9f6;
+  background: rgb(114, 119, 255);
+  transition: 0.5s;
 }
 
 .developer {
@@ -101,11 +102,22 @@ export default {};
   justify-content: center;
   align-items: center;
   padding-top: 0.3rem;
+  transition: 0.2s;
+}
+
+.circle:hover {
+  border-color: rgb(114, 119, 255);
+  transform: scale(1.1, 1.1);
 }
 
 .bi-arrow-right {
   font-size: 50px !important;
   color: #faf9f6;
+  transition: 0.2s;
+}
+
+.bi-arrow-right:hover {
+  color: rgb(114, 119, 255);
 }
 
 img {
@@ -138,9 +150,9 @@ img {
   }
 
   .hero-btn:hover {
-    border: 1px solid rgb(0, 10, 255, 50%);
-    background: rgb(0, 10, 255, 50%);
-    transition: 1s;
+    border: 1px solid #faf9f6;
+    background: rgb(114, 119, 255);
+    transition: 0.5s;
   }
 }
 
@@ -168,9 +180,9 @@ img {
   }
 
   .hero-btn:hover {
-    border: 1px solid rgb(0, 10, 255, 50%);
-    background: rgb(0, 10, 255, 50%);
-    transition: 1s;
+    border: 1px solid #faf9f6;
+    background: rgb(114, 119, 255);
+    transition: 0.5s;
   }
 
   .col-left,
@@ -204,9 +216,9 @@ img {
   }
 
   .hero-btn:hover {
-    border: 1px solid rgb(0, 10, 255, 50%);
-    background: rgb(0, 10, 255, 50%);
-    transition: 1s;
+    border: 1px solid #faf9f6;
+    background: rgb(114, 119, 255);
+    transition: 0.5s;
   }
 }
 </style>
