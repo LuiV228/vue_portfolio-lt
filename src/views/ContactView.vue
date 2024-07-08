@@ -6,17 +6,13 @@
         <h2>CONTACT</h2>
         <div class="links">
           <div class="link">
-            <a
-              ><img src="https://i.ibb.co/BC52xpL/linkedin-logo.png" alt="linkedin"
-            /></a>
+            <a href="https://www.linkedin.com/in/luqmaan-toffey-9802772aa/" target="_blank"><img src="https://i.ibb.co/BC52xpL/linkedin-logo.png" alt="linkedin"/></a>
           </div>
           <div class="link">
-            <a
-              ><img src="https://i.ibb.co/0QVrMd3/github-logo.webp" alt="github"
-            /></a>
+            <a href="https://github.com/LuiV228/vue_portfolio-lt.git" target="_blank"><img src="https://i.ibb.co/0QVrMd3/github-logo.webp" alt="github"/></a>
           </div>
           <div class="link">
-            <a><img src="https://i.ibb.co/4N94ryc/email-logo.png" alt="email" /></a>
+            <a><img src="https://i.ibb.co/4N94ryc/email-logo.png" alt="email"/></a>
           </div>
         </div>
       </div>

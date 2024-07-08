@@ -7,11 +7,9 @@
         </p>
       </div>
       <div class="row-2">
-        <a href="https://github.com/LuiV228/vue_portfolio-lt.git"
-          ><i class="bi bi-github" id="icon"></i
+        <a href="https://github.com/LuiV228/vue_portfolio-lt.git" target="_blank"><i class="bi bi-github" id="icon"></i
         ></a>
-        <a href="https://www.linkedin.com/in/luqmaan-toffey-9802772aa/"
-          ><i class="bi bi-linkedin" id="icon"></i
+        <a href="https://www.linkedin.com/in/luqmaan-toffey-9802772aa/" target="_blank"><i class="bi bi-linkedin" id="icon"></i
         ></a>
       </div>
     </footer>
