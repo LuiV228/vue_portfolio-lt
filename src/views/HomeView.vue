@@ -10,7 +10,7 @@
       </div>
       <br />
       <div class="contact-us" id="home">
-        <router-link to="/contact" class="hero-btn">Contact Us</router-link>
+        <router-link to="/contact" class="hero-btn">Contact Me</router-link>
       </div>
     </div>
     <div class="col-middle">
