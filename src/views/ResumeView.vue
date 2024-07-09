@@ -10,13 +10,13 @@
       v-for="resumes in resume"
       :key="resumes.id"
     >
-      <div class="card m-3" style="width: 18rem; height: 35rem">
+      <div class="card m-3 mb-5" style="width: 18rem; height: 30rem">
         <ul class="list-group list-group-flush">
           <li class="list-group-item" id="card-content-1">
             {{ resumes.year }}: {{ resumes.place }}
           </li>
         </ul>
-        <img :src="resumes.proof" class="card-img-top p-3" />
+        <img :src="resumes.proof" class="card-img-top p-3" id="img"/>
         <div class="card-body">
           <p class="card-text" id="card-content-2">{{ resumes.description }}</p>
         </div>
@@ -46,24 +46,24 @@ export default {
 }
 
 .display-2 {
-  color: #36454f;
+  color: #faf9f6;
   text-align: center;
-  margin-bottom: 3rem;
+  padding-bottom: 22px;
 }
 
 .card {
-  background: #e0e0f1;
+  background: rgb(114, 119, 255);
   width: 100%;
   max-width: 300px;
-  transition: transform 0.3s;
+  transition: transform 0.2s;
+  margin-bottom: 30px;
 }
 
 .card:hover {
-  transform: scale(1.05);
+  transform: scale(1.1, 1.1);
 }
 
 .card-img-top {
-  border-radius: 10px;
   height: 200px;
   object-fit: cover;
 }
@@ -77,14 +77,16 @@ export default {
 }
 
 .card-body {
+  margin: 1rem;
   padding: 1rem;
-  height: 10px;
+  background-color: #36454f;
+  border-radius: 3%;
 }
 
 .card-text {
   text-align: justify;
   font-size: 1rem;
-  color: #333;
+  color: #faf9f6;
 }
 
 @media (max-width: 1200px) {

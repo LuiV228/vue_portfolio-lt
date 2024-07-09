@@ -84,7 +84,7 @@ export default {};
 .hero-btn:hover {
   border: 1px solid #faf9f6;
   background: rgb(114, 119, 255);
-  transition: 0.5s;
+  transform: scale(1.2, 1.2);
 }
 
 .developer {
