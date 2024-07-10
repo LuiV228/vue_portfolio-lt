@@ -1,16 +1,22 @@
 <template>
   <div class="home">
-    <h2 class="display-2">What is Luqmaan?</h2>
+    <h2 class="display-2">Welcome</h2>
   </div>
   <br />
   <div class="row">
     <div class="col-left">
       <div id="intro">
-        <h2 class="intro"><span>Hi, I am Luqmaan Toffey</span></h2>
+        <h2 class="intro"><span>I am Luqmaan Toffey</span></h2>
       </div>
+      <br />
       <br />
       <div class="contact-us" id="home">
         <router-link to="/contact" class="hero-btn">Contact Me</router-link>
+      </div>
+      <br />
+      <br />
+      <div class="download-cv" id="home">
+        <a href="https://drive.google.com/file/d/1rB92dVRxXr4alypRRJsvfD09kLVMzO9S/view?usp=sharing" target="_blank"><p class="hero-btn-cv">Download CV <i class="bi bi-arrow-right"></i> <i class="fa-solid fa-download"></i></p></a>
       </div>
     </div>
     <div class="col-middle">
@@ -24,7 +30,7 @@
       </div>
       <br />
       <div class="circle">
-        <router-link to="/about" class="nav-link"><i class="bi bi-arrow-right"></i></router-link>
+        <router-link to="/about" class="nav-link"><i class="bi bi-arrow-right" id="arrow"></i></router-link>
       </div>
       <br />
       <div>
@@ -87,6 +93,26 @@ export default {};
   transform: scale(1.2, 1.2);
 }
 
+.hero-btn-cv {
+  color: #faf9f6;
+  padding: 12px 34px;
+  font-size: 17px;
+  background: transparent;
+  cursor: pointer;
+  text-align: center;
+  transition: 0.2s;
+}
+
+.hero-btn-cv:hover {
+  border-radius: 15px;
+  background: rgb(114, 119, 255);
+  transform: scale(1.2, 1.2);
+}
+
+a {
+  text-decoration: none;
+}
+
 .developer {
   text-align: center;
   margin-top: 10%;
@@ -106,18 +132,18 @@ export default {};
 }
 
 .circle:hover {
-  border-color: rgb(114, 119, 255);
+  border-color: rgb(134, 138, 255);
   transform: scale(1.1, 1.1);
 }
 
-.bi-arrow-right {
+#arrow {
   font-size: 50px !important;
   color: #faf9f6;
   transition: 0.2s;
 }
 
-.bi-arrow-right:hover {
-  color: rgb(114, 119, 255);
+#arrow:hover {
+  color: rgb(134, 138, 255);
 }
 
 img {
@@ -151,6 +177,17 @@ img {
 
   .hero-btn:hover {
     border: 1px solid #faf9f6;
+    background: rgb(114, 119, 255);
+    transition: 0.5s;
+  }
+
+  .hero-btn-cv {
+    font-size: 1.1rem;
+    padding: 10px 28px;
+  }
+
+  .hero-btn-cv:hover {
+    border-radius: 3%;
     background: rgb(114, 119, 255);
     transition: 0.5s;
   }

@@ -1,7 +1,7 @@
 <template>
   <div class="container">
     <div class="row">
-      <h2 class="display-2">Who is Luqmaan?</h2>
+      <h2 class="display-2">Acknowledgments</h2>
     </div>
     <div class="row" id="card-row">
       <div

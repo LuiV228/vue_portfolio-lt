@@ -1,7 +1,7 @@
 <template>
   <div class="container-fluid 100vh">
     <div class="row">
-      <h2 class="display-2">My Projects</h2>
+      <h2 class="display-2">My Personal Projects</h2>
     </div>
   </div>
   <br />
