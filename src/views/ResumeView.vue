@@ -31,10 +31,18 @@
     </div>
     <div class="container">
       <div class="row">
+        <h2 class="display-2">Certificates</h2>
+      </div>
+    </div>
+    <div class="certificates-container">
+      <img v-for="(certificate, index) in certificates" :key="index" :src="certificate" class="certificate-img" />
+    </div>
+    <div class="container">
+      <div class="row">
         <h2 class="display-2">Soft Skills</h2>
       </div>
     </div>
-    <div class="soft-skills">
+    <div class="soft-skills" id="soft">
       <div class="skill" v-for="(softSkill, index) in softSkills" :key="index">
         <i :class="softSkill.icon"></i>
         <span>{{ softSkill.name }}</span>
@@ -56,14 +64,23 @@ export default {
   data() {
     return {
       skills: [
-        { name: 'HTML5', icon: 'fa-brands fa-html5' },
-        { name: 'CSS3', icon: 'fa-brands fa-css3-alt' },
-        { name: 'Bootstrap', icon: 'fa-brands fa-bootstrap' },
-        { name: 'Figma', icon: 'fa-brands fa-figma' },
-        { name: 'JavaScript', icon: 'fa-brands fa-js' },
-        { name: 'Mysql', icon: 'fa-solid fa-database' },
-        { name: 'Vue.js', icon: 'fa-brands fa-vuejs' },
-        { name: 'Node.js', icon: 'fa-brands fa-node-js' },
+        { name: 'HTML5', icon: 'fa-brands fa-html5', color: 'red' },
+        { name: 'CSS3', icon: 'fa-brands fa-css3-alt', color: 'orange' },
+        { name: 'Bootstrap', icon: 'fa-brands fa-bootstrap', color: 'yellow' },
+        { name: 'Figma', icon: 'fa-brands fa-figma', color: 'green' },
+        { name: 'JavaScript', icon: 'fa-brands fa-js', color: 'blue' },
+        { name: 'Mysql', icon: 'fa-solid fa-database', color: 'indigo' },
+        { name: 'Vue.js', icon: 'fa-brands fa-vuejs', color: 'violet' },
+        { name: 'Node.js', icon: 'fa-brands fa-node-js', color: 'black' },
+      ],
+      certificates: [
+        'https://i.ibb.co/ZX8DhyB/Luqmaan-API-Badge.png',
+        'https://i.ibb.co/4TCtJg7/Luqmaan-Drupal-Badge.png',
+        'https://i.ibb.co/4FFnXqH/Luqmaan-Figma-Badge.png',
+        'https://i.ibb.co/WWd4Fgr/Luqmaan-SCRUM-Badge.png',
+        'https://i.ibb.co/crY5Swt/Hubspot-SEO-certification.png',
+        'https://i.ibb.co/SxVMmJS/Luqmaan-Python-A-Z-Course-Certificate.png',
+        'https://i.ibb.co/mFLTVP4/Luqmaan-Semrush-Certificate.png',
       ],
       softSkills: [
         { name: 'Leadership', icon: 'fa-solid fa-user-tie' },
@@ -147,9 +164,15 @@ export default {
   grid-template-columns: repeat(5, 1fr);
 }
 
+.certificates-container {
+  display: grid;
+  justify-content: center;
+  gap: 20px;
+  grid-template-columns: repeat(4, 1fr);
+}
+
 .skill {
   text-align: center;
-  font-size: 130px;
 }
 
 .skill span {
@@ -159,7 +182,27 @@ export default {
 }
 
 .skill i {
+  font-size: 100px; /* Default icon size */
   transition: 0.5s ease all;
+}
+
+/* Responsive icon sizes */
+@media (max-width: 1200px) {
+  .skill i {
+    font-size: 80px;
+  }
+}
+
+@media (max-width: 768px) {
+  .skill i {
+    font-size: 60px;
+  }
+}
+
+@media (max-width: 576px) {
+  .skill i {
+    font-size: 50px;
+  }
 }
 
 .skill .fa-html5:hover {
@@ -195,15 +238,31 @@ export default {
   color: black;
 }
 
+.certificate-img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+#soft {
+  padding-bottom: 100px;
+}
+
 @media (max-width: 1200px) {
   .card {
     max-width: 90%;
+  }
+  .certificates-container {
+    grid-template-columns: repeat(3, 1fr);
   }
 }
 
 @media (max-width: 768px) {
   .card {
     max-width: 100%;
+  }
+  .certificates-container {
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
@@ -214,5 +273,9 @@ export default {
   .card {
     max-width: 100%;
   }
+  .certificates-container {
+    grid-template-columns: repeat(1, 1fr);
+  }
 }
 </style>
+  

@@ -7,7 +7,7 @@
     <div class="container-fluid">
       <router-link to="/">
         <img
-          src="https://i.postimg.cc/7hqY8Yfv/LT-Coding.png"
+          src="https://i.ibb.co/WGt09sk/LT-Coding-Logo.png"
           alt="logo"
           id="logo"
         />
@@ -61,6 +61,7 @@ export default {
 #logo {
   width: 80px;
   height: 80px;
+  border-radius: 50%;
 }
 
 #nav {
